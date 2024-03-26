@@ -1,0 +1,185 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-size: 16px;
+    font-family: "Outfit";
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+    height: 100vh;
+    line-height: 1.5;
+
+}
+main {
+    background-color: hsl(0, 0%, 100%) ;
+
+}
+.bold {
+    font-weight: 700;
+    color: hsl(24, 5%, 32%) ;
+}
+.dark {
+    color: hsl(14, 45%, 36%) 
+}
+img {
+    width:100%;
+}
+.container {
+
+    margin: 0 auto 35px auto;
+    
+}
+.bottom-bordered {
+    border-bottom: 1px solid hsl(24, 5%, 85%);
+    padding-bottom: 30px;
+}
+section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+h1,h2 {
+    font-family: "Young Serif";
+    font-weight: 400;
+}
+h1 {
+    font-size: 36px;
+    line-height: 1;
+    margin: 30px 0;
+    color: hsl(24, 5%, 22%)
+}
+.dark-heading {
+    margin-bottom: 20px;
+    color: hsl(14, 45%, 36%);
+    font-size: 30px;
+
+}
+p, li, td {
+    color: hsl(24, 5%, 38%);
+
+    
+}
+
+/* prep section */
+.purple-bg {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px 30px 20px 20px;
+    border-radius: 10px;
+}
+
+
+.prep li {
+    
+   
+    text-indent: 5px;
+    padding-left: 15px;
+    text-indent: 0;
+    
+    
+
+
+}
+li {
+    padding-bottom: 10px;
+    padding-left: 15px;
+    text-indent: 0;
+}
+.prep li::marker{
+    color: hsl(332, 51%, 20%);
+    font-size: 10px;
+    
+}
+.indent {
+    margin-left: 25px;
+}
+
+
+.purple-heading {
+    color: hsl(332, 51%, 32%);
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 600 ;
+    margin-bottom: 15px;
+}
+/*ingredients section */
+
+.ingredients li::marker{
+    color:hsl(14, 45%, 36%);
+    font-size: 10px;
+}
+
+.ol-container {
+    text-align: left;
+ 
+  margin: 0 18px;
+}
+/* instructions section */
+
+.instructions li::marker{
+    margin-right: 10px;
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+/* nutrition section */
+.nutrition p {
+    margin-bottom: 20px;
+}
+
+/* table styling */
+tr:last-of-type {
+    border-bottom: none;
+}
+td {
+    
+    line-height: 3;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+td + td {
+    text-indent: -137px;
+}
+td:first-of-type {
+    text-indent: 30px;
+}
+
+tr {
+    line-height: 3;
+    border-bottom: 1px solid hsl(24, 5%, 85%);
+}
+
+
+
+@media (min-width: 1440px) {
+    main{
+        width: 50%;
+        border-radius: 25px;
+        margin: 0 auto;
+    }
+    body {
+        padding-top: 100px;
+    }
+    .image-container{
+        padding-top: 30px;
+    
+    }
+    img {
+        border-radius: 15px;
+    }
+    section {
+        width: 90%;
+    }
+    td + td {
+        text-indent: 74px;
+    }
+    .container {
+        padding-bottom: 10px;
+    }
+
+}
